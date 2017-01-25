@@ -1,2 +1,2 @@
-# appConcessionariaIonic
-Aplicativo mobile simples de uma concessionária de carros
+# Aplicativo mobile simples de uma concessionária de carros
+
