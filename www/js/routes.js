@@ -7,6 +7,12 @@ angular.module('starter')
       templateUrl: 'templates/listagem.html',
       controller: 'ListagemController'
       }
+    )
+     .state('carroescolhido', {
+      url: '/carroescolhido',
+      templateUrl: 'templates/carroEscolhido.html',
+      controller: 'carroEscolhidoController'
+      }
     );
 
     //rota padrão
