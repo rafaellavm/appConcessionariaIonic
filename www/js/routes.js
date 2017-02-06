@@ -8,8 +8,8 @@ angular.module('starter')
       controller: 'ListagemController'
       }
     )
-     .state('carroescolhido', {
-      url: '/carroescolhido',
+    .state('carroescolhido', {
+      url: '/carroescolhido/:carro',
       templateUrl: 'templates/carroEscolhido.html',
       controller: 'carroEscolhidoController'
       }
