@@ -3,7 +3,7 @@ angular.module('starter')
 
     $scope.listaDeCarros = [{
         'nome': 'BMW 120i',
-        'preco': 70.000
+        'preco': 70000
 
     }];
 });
