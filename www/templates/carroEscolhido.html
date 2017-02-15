@@ -1,31 +1,29 @@
 <ion-view>
-     <ion-header-bar class="bar-positive">
-      <h1 class="title">Concessionária Marraschi: Carro escolhido</h1>
-    </ion-header-bar>
-    <!--<ion-nav-title></ion-nav-title>-->
-    <ion-content>
-        <div class="card">
-            <div class="item item-divider">Ótima escolha</div>
-            <div class="item item-text-wrap">
-                {{carroEscolhido.nome}}
-
-                <ul class="list">
-                    <li class="item item-toggle" ng-repeat="acessorio in listaDeAcessorios">
-                        {{acessorio.nome}} - R{{acessorio.preco | currency}}
-                        <label class="toggle toggle-assertive">
+  <ion-header-bar class="bar-positive">
+    <h1 class="title">Concessionária Marraschi: Carro escolhido</h1>
+  </ion-header-bar>
+  <!--<ion-nav-title></ion-nav-title>-->
+  <ion-content>
+    <div class="card">
+      <div class="item item-divider">Ótima escolha</div>
+      <div class="item item-text-wrap">
+        {{carroEscolhido.nome}}
+        <ul class="list">
+          <li class="item item-toggle" ng-repeat="acessorio in listaDeAcessorios">
+            {{acessorio.nome}} - R{{acessorio.preco | currency}}
+            <label class="toggle toggle-assertive">
                             <input type="checkbox" ng-model="isMarcado" ng-click="mudaCheckAcessorio(acessorio, isMarcado)">
                             <div class="track">
                                 <div class="handle"></div>
                             </div>
                         </label>
-                    </li>
-                </ul>
-            </div>
-            <div class="item item-divider">
-                R{{carroEscolhido.preco | currency}}
-            </div>
-        </div>
-
-    </ion-content>
-
+          </li>
+        </ul>
+      </div>
+      <div class="item item-divider">
+        R{{carroEscolhido.preco | currency}}
+      </div>
+    </div>
+    <a class="button button-positive button-full" href="#/finalizarPedido">Finalizar pedido</a>
+  </ion-content>
 </ion-view>

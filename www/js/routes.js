@@ -13,6 +13,11 @@ angular.module('starter')
       templateUrl: 'templates/carroEscolhido.html',
       controller: 'carroEscolhidoController'
       }
+    ).state('finalizarPedido', {
+      url: '/finalizarPedido',
+      templateUrl: 'templates/finalizarPedido.html',
+      controller: 'finalizarPedidoController'
+      }
     );
 
     //rota padrão
