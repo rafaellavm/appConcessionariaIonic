@@ -1,13 +1,12 @@
 angular.module('starter')
-.controller('ListagemController', function($scope){
+.controller('ListagemController', function($scope, CarroService){
 
-    $scope.listaDeCarros = [
-        {
-        'nome': 'BMW 120i',
-        'preco': 70000},
-         {
-        'nome': 'Onix 1.6',
-        'preco': 55000}
-        
-        ];
+    CarroService.obterCarros().then(function(success){
+        console.log(success);
+        $scope.listaDeCarros = success;
+    });
+
+    //$scope.listaDeCarros = CarroService.obterCarros();
+    
+   
 });
