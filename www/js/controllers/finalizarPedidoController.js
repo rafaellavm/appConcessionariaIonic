@@ -17,7 +17,7 @@ angular.module('starter')
             }
         }
 
-        console.log('pedido = ', pedidoFinalizado);
+        //console.log('pedido = ', pedidoFinalizado);
         CarroService.salvarPedido(pedidoFinalizado).then(function(dados){
             
             $ionicPopup.alert({

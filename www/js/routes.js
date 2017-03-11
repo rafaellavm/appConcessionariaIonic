@@ -18,9 +18,14 @@ angular.module('starter')
       templateUrl: 'templates/finalizarPedido.html',
       controller: 'finalizarPedidoController'
       }
+    )
+    .state('login', {
+      url: '/login',
+      templateUrl: 'templates/login.html'
+      }
     );
 
     //rota padrão
-    $urlRouterProvider.otherwise('/listagem');
+    $urlRouterProvider.otherwise('/login');
 
 });
