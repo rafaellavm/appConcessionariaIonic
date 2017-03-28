@@ -20,10 +20,10 @@ angular.module('starter')
       }
     )
     .state('login', {
-      url: '/login',
-      templateUrl: 'templates/login.html'
-      }
-    );
+    url : '/login',
+    templateUrl : 'templates/login.html',
+    controller: 'LoginController'
+});
 
     //rota padrão
     $urlRouterProvider.otherwise('/login');

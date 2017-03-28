@@ -14,6 +14,12 @@ angular.module('starter')
             return $http.get(url + 'salvarpedido', pedido).then(function(response){
                 return 'Deu certo';
             });
+        },
+        realizarLogin: function(dadosLogin){
+
+            return $http.get(url + "login", dadosLogin).then(function(response){
+                return response.data;
+            });
         }
     }
 });
